@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rajdhani&display=swap');
+
+*{
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+body{
+    background-image: url(background_etoile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+@media screen and (max-width:1200px){
+    .header_accueil{
+        display: flex !important;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+
+    .icon_menu{
+        transform: scale(1) !important;
+        position: static !important;
+    }
+
+    .menu div{
+        display: none !important;
+    }
+    .menu{
+        position: absolute;
+    }
+
+    .menu:hover div{
+        display: flex !important;
+        backdrop-filter: blur(7px);
+    }
+    .menu:hover{
+        height: 230px;
+        
+    }
+
+    .logo_header img{
+        transform: scale(0);
+        position: absolute;
+    }
+
+.image_intro{
+    width: 400px !important;
+}
+iframe{
+    display: none;
+}
+.videotips a{
+    display: flex !important;
+    text-decoration: underline  white;
+}
+.intro{
+    margin-top: 150px;
+}
+
+.conteneur_login{
+    margin-top: 200px;
+}
+
+
+
+}
+.menu_header img{
+    width: 160px;
+}
+
+.icon_menu{
+    transform: scale(0);
+    width: 200px;
+    z-index: 2;
+    position: absolute;
+}
+
+.menu{
+    width: 200px;
+    height: 83px;
+
+}
+.header_accueil {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 295.5px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .menu_header { grid-area: 2 / 1 / 3 / 2; }
+    .logo_header { grid-area: 1 / 1 / 2 / 6; }
+
+    .logo_header img{
+    width: 600px;
+    }
+
+    .logo_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+  
+.menu_header div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+    color: white;
+    padding-left: 8px;
+    padding-right: 8px;
+    border: solid white 1px;
+    border-radius: 25px;
+
+}
+
+.accueil{
+    background-color: white !important;
+    color: black !important;
+
+}
+.personnages{
+        background-color: white !important;
+        color: black !important;
+    
+}
+
+.tierlist{
+    background-color: white !important;
+    color: black !important;
+
+    }
+
+.home:hover{
+    color: #C9A36A;
+}
+.perso:hover{
+    color: #C9A36A;
+}
+.tl:hover{
+    color: #C9A36A;
+}
+    
+a{
+    text-decoration: none;
+}
+.intro p{
+    color: white;
+}
+hr{
+  border-style: none;
+}
+
+.formulaire a{
+   color: white;
+}
+.formulaire a:hover{
+    color: #C9A36A !important;
+}
+
+.formulaire{
+    display: flex;
+    position: absolute;
+    justify-content: end;
+    z-index: 2;
+}
+
+
+.intro img{
+   width: 500px;
+}
+
+
+li{
+    color: white;
+}
+
+.gras{
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.gauche { grid-area: 1 / 1 / 2 / 2; }
+.milieu { grid-area: 1 / 2 / 2 / 3; }
+.droite { grid-area: 1 / 3 / 2 / 4; }
+
+.footer div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+footer p{
+        color: white;
+}
+footer a{
+        color: white;
+    }
+
+.milieu{
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.milieu i{
+margin-right: 10px;
+}
+
+.milieu a{
+color: white;
+}
+
+.milieu a:hover{
+color: #C9A36A !important;
+}
+
+.droite{
+text-align: right;
+}
+
+.gauche a:hover{
+color: #C9A36A;
+}
+
+.gauche{
+    display: flex;
+    align-items: center;
+}
+
+.bouton{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 25px;
+    border: white solid 1px;
+    width: 400px;
+    padding-right: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+      
+}
+
+.bouton img{
+    width: 100px;
+    border-radius: 25px;
+}
+
+.bouton_conteneur{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.intro{
+    line-height: 30px;
+}
+
+.videotips{
+    display: flex;
+    flex-wrap: wrap;
+}
+.videotips a{
+    display: none;
+}
+
+
+@media screen and (min-width:1200px){
+    .videotips{
+        justify-content: space-around;
+    }
+}
+
+
+
+.conteneur_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+}
+
+
+label{
+    color: white !important;
+    font-size: 25px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-around;
+    border: white;
+}
+
+input[type="password"]{
+    width: 400px;
+
+}
+
+input[type="text"]{
+    width: 400px;
+
+}
+
+button{
+    border-radius: 25px;
+    background-color: transparent;
+    border: white solid 1px;
+    color: white;
+    height: 30px;
+    font-size: 15px;
+}
+
+button:hover{
+    color: #C9A36A;
+}
+ 
+.rouge{
+    color: red;
+}
+.jaune{
+    color: yellow;
+}
+.vert{
+    color: green;
+}
+.violet{
+    color: purple;
+}
+
+.bleufonce{
+    color: darkblue;
+}
+.gris{
+    color: gray;
+}
+
+.bleuciel{
+    color: skyblue;
+}
+
+.type img{
+    width: 30px;
+    margin-top: 5px;
+}
+
+.italique{
+    font-style: italic;
+}
+
+.etoilefilante{
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: -2;
+    animation: filante 4s 0.2s infinite;
+}
+.etoilefilantee{
+    top: 300px;
+    right: 0px;
+    position: fixed;
+    z-index: -2;
+    animation: filante 3s 0.2s infinite ;
+}
+.etoilefilanteee{
+    top: 600px;
+    right: 0px;
+    position: fixed;
+    z-index: -2;
+    animation: filante 3.5s 0.3s infinite ;
+}
+
+.etoilefilanteeee{
+    top: 380px;
+    right: 0px;
+    position: fixed;
+    z-index: -2;
+    animation: filante 4s 0.1s infinite ;
+}
+.etoilefilante img{
+    width: 200px;
+    transform: rotate(15deg);
+}
+.etoilefilantee img{
+    transform: rotate(15deg);
+}
+.etoilefilanteee img{
+    width: 300px;
+    transform: rotate(15deg);
+}
+.etoilefilanteeee img{
+    width: 150px;
+    transform: rotate(15deg);
+}
+
+
+
+
+@keyframes filante {
+    0%{
+        transform: translate(800px,0);
+    
+      }
+    100%{
+        transform: translate(-3000px,0);}
+    
+}
