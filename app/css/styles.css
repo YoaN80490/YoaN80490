@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rajdhani&display=swap');
+
+*{
+    font-family: "Montserrat";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --first-color: #47778B;
+    --second-color: #eeeeee;
+    --gradient :linear-gradient(0.25turn,#47778B, #eeeeee, #47778B);
+}
+
+.body{
+    background: url(../images/bg.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.header{
+    height: 150px;
+    background-color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__h1{
+    color: var(--first-color);
+}
+
+.main{
+    background-color: var(--first-color);
+    margin: 0 3rem;
+    text-align: center;
+    color: var(--second-color);
+    padding: 3rem;
+}
+
+.h3{
+    display: inline-block;
+    padding:  0 3rem;
+}
+
+.underline{
+    background-image: linear-gradient(90deg, #47778B 0%, #47778B 5%, #eeeeee 45%, #eeeeee 55%, #47778B 95%, #47778B 100%);
+    width: 200px;
+    height: 3px;
+    margin-bottom: 2rem;
+}
+
+.article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.button__cv{
+    border: var(--second-color) solid 1px;
+    border-radius: 20px;
+    padding:  0 1rem;
+    margin-top: 1rem;
+    color: #eeeeee;
+    text-decoration: none;
+}
