@@ -6,6 +6,10 @@
     <title>Portfolio - Yoan Salangros</title>
     <link rel="stylesheet" href="app/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="app/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="app/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="app/favicon_io/site.webmanifest">
 </head>
 <body class="body">
     <header class="header">
@@ -14,36 +18,75 @@
     <main class="main">
         <img src="app/images/photo.png" alt="">
         <h2>Yoan Salangros</h2>
-        <article class="article">
+        <article class="main__section">
             <h3 class="h3">Profil</h3>
             <span class="underline"></span>
             <p>20 ans, un peu blagueur mais très motivé. Je recherche en permanence à être une meilleure version de moi-même. J'ai obtenu mon Baccalauréat général il y a 2 ans, enchaîné sur une année en tant qu'ouvrier du bâtiment. J'ai maintenant trouvé ma voie dans le développement web et je souhaite continuer sur ma lancée avec une formation « Concepteur développeur d'applications web » en alternance.</p>
-            <a class="button__cv" target="_blank" href="app/files/CV_Yoan_Salangros.pdf">Curriculum vitæ →</a>
+            <a class="button__cv" target="_blank" href="app/files/CV_Yoan_Salangros.pdf">Curriculum vitæ <i class="fa-solid fa-download"></i></a>
         </article>
 
-        <article class="article">
+        <article class="main__section">
             <h3 class="h3">Projets</h3>
             <span class="underline"></span>
 
-            <section class="projects">
-                <div class="project">
+            <ul class="projects">
+                <i class="fa-solid fa-arrow-left" id="left-btn"></i>
+                <li class="project current">
                     <img src="app/images/site1.png" alt="portefolio" class="project__img">
                     <p class="project__p">Site sur lequel vous vous trouver, HTML/CSS/JS uniquement</p>
-                    <a class="project__link" href="">
+                    <a class="project__link" href="https://yoan80490.github.io/YoaN80490/">
                         <i class="fa-solid fa-link"></i>Portefolio
                     </a>
-                </div>
-                <div class="project">
+                </li>
+                <li class="project current">
                     <img src="app/images/siteHSR.png" alt="portefolio" class="project__img">
-                    <p class="project__p">Projet personnel: site de documentation concernant le jeu Honkai: Star Rail. Utilisation de PHP(MVC, POO...), mySQL, JavaScript, CSS, HTML.</p>
-                    <a class="project__link" href="">
-                        <i class="fa-solid fa-link"></i>Portefolio
+                    <p class="project__p">Projet personnel. Utilisation de PHP(MVC, POO...), mySQL, JavaScript, CSS, HTML.</p>
+                    <a class="project__link" href="https://github.com/YoaN80490/HSRsolo/tree/refonte-du-projet">
+                        <i class="fa-solid fa-link"></i>Documentation Honkai: Star Rail
                     </a>
-                </div>
-            </section>
+                </li>
+                <li class="project">
+                    <img alt="" class="project__img">
+                    <p class="project__p">Prochainement..</p>
+                    <a class="project__link" href="">
+                        <i class="fa-solid fa-link"></i>
+                    </a>
+                </li>
+                <i class="fa-solid fa-arrow-right" id="right-btn"></i>
+            </ul>
         </article>
 
+        <section class="main__section main__section__links">
+            <h3 class="h3">Liens</h3>
+            <span class="underline"></span>
+
+            <div class="network">
+                <a href="https://github.com/YoaN80490" class="item__link" title="github">
+                    <i class="fa-brands fa-github"></i>
+                    YoaN80490
+                </a>
+                
+                <a href="https://www.linkedin.com/in/yoansalangros/" class="item__link" title="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                    yoansalangros
+                </a>
+                
+            </div>
+                <a href="mailto:salangros.yoan@gmail.com" class="item__link" title="adresse mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    salangros.yoan@gmail.com
+                </a>
+               
+        </section>
+        
+
     </main>
-    
+
+    <footer class="footer">
+        <p>Yoan Salangros 2024</p>
+        <hr class="hr">
+    </footer>
+
+<script type="module" src="app/js/app.js"></script>
 </body>
 </html>
