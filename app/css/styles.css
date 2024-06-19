@@ -45,7 +45,7 @@
 
 .ul__item__link{
     text-decoration: none;
-    color: #551A8B;
+    color: var(--first-color);
 }
 
 .ul__item__link:hover{
@@ -54,6 +54,7 @@
 
 .self__image{
     margin:2rem 0;
+    filter: drop-shadow(0 0 0.50rem rgba(0, 0, 0, 0.5));
 }
 
 .header__h1{
@@ -100,12 +101,22 @@
     margin-top: 4rem;
     color: #eeeeee;
     text-decoration: none;
+    transition: 0.2s;
+}
+.button__cv:hover{
+    transform: scale(1.10);
 }
 
 .return__btn{
     position: fixed;
     right: 1vw;
     bottom: 5vh;
+    z-index: 3;
+    filter: drop-shadow(0 0 0.50rem rgba(0, 0, 0, 0.5));
+}
+
+.fa-arrow-turn-up:hover{
+    color: red;
 }
 
 .fa-arrow-turn-up{
@@ -113,6 +124,7 @@
     background: var(--second-color);
     padding: 1rem;
     border-radius: 20px;
+    color: var(--first-color);
 }
 
 @media screen and (max-width:700px){
@@ -120,45 +132,90 @@
         flex-direction: column;
     }
 
+    .ul__item__link, .ul__item{
+        padding: 1rem 0;
+    }
+
 }
 
 /*     SECTION EXPERIENCE    */
 
-.skills__section{
+.exp__section{
     display: flex;
     margin-top: 4rem;
 }
 
-.skills__div{
+.exp__div{
     width: auto;
 }
 
-.skills__separator{
+.exp__separator{
     width: 2px;
     height: auto;
     background-color: var(--second-color);
     margin: 0 1rem;
 }
 
-.skill{
+.exp{
     background-color: var(--second-color);
     color: var(--first-color);
     padding: 1rem;
     border-radius: 5px;
     text-align: left;
     font-size: calc(0.6rem + 0.5vw);
+    filter: drop-shadow(0 0 0.50rem rgba(0, 0, 0, 0.5));
 }
 
-.left__skill{
+.left__exp{
     margin-bottom: 10rem;
 }
 
-.right__skill{
+.right__exp{
     margin-top: 10rem;
 }
 
+/*     SECTION SKILLS     */
+
+.skills__card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--second-color);
+    color: var(--first-color);
+    padding: 3rem;
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.50rem rgba(0, 0, 0, 0.5));
+}
+
+.skills__part{
+    margin: 1rem 0;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skill__cellule{
+    background: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.h4{
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width:700px){
-    
+    .skill__cellule{
+        margin-right: 0;
+    }
+
 }
 
 /*     SECTION PROJETS     */
@@ -167,7 +224,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-
+    margin-top: 3rem;
 }
 
 
@@ -180,9 +237,10 @@
     position: relative;
     height: 37vh;
     list-style: none;
-    transition: 0.6;
+    transition: 0.5;
     display: none;
     border: solid 1px var(--second-color);
+    filter: drop-shadow(0 0 0.50rem rgba(0, 0, 0, 0.5));
 }
 
 .project__img{
@@ -199,6 +257,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    font-size: calc(0.6rem + 0.5vw);
 }
 
 .project__link{
@@ -214,16 +273,22 @@
 .fa-arrow-right, .fa-arrow-left{
     font-size: 4rem;
     margin: auto 0;
+    transition: 0.2s;
+}
+
+.fa-arrow-right:hover, .fa-arrow-left:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width:700px){
     .projects{
         flex-direction: column;
+        margin-top: 0;
     }
 
     .project{
         width: 100%;
-        height: 40vh;
+        height: 38vh;
         margin-top: 2rem;
     }
 
@@ -247,10 +312,29 @@
 
 /*   SECTION LINKS   */
 
-.network{
+.main__section__links{
     display: flex;
     justify-content: space-around;
     width: 100%;
+}
+
+.mailto__btn{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--first-color);
+    background-color: var(--white);
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.5));
+    transition: 0.2s ease;
+    margin-bottom: 5rem;
+}
+
+.mailto__btn:hover{
+    transform: scale(1.1);
 }
 
 .item__link{
@@ -261,7 +345,7 @@
     align-items: center;
     color: var(--second-color);
     text-decoration: none;
-    transition:0.6s ease;
+    transition:0.2s ease;
 }
 
 .item__link:hover{
@@ -272,9 +356,6 @@
     font-size: calc(3rem + 0.5vw) ;
 }
 
-@media screen and (max-width:700px){
-
-}
 
 /*    FOOTER    */
 
