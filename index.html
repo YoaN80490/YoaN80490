@@ -12,17 +12,69 @@
     <link rel="manifest" href="app/favicon_io/site.webmanifest">
 </head>
 <body class="body">
-    <header class="header">
+    <a class="return__btn" href="#top">
+        <i class="fa-solid fa-arrow-turn-up"></i>
+    </a>
+    <header id="top" class="header">
         <h1 class="header__h1">Portfolio</h1>
     </header>
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li><a class="ul__item__link" href="#profil">Profil</a></li>
+            <li><a class="ul__item__link" href="#experiences">Expériences</a></li>
+            <li><a class="ul__item__link" href="#competences">Compétences</a></li>
+            <li><a class="ul__item__link" href="">Projets</a></li>
+            <li><a class="ul__item__link" href="">Liens</a></li>
+            <li><a class="ul__item__link" href="">Contact</a></li>
+        </ul>
+    </nav>
     <main class="main">
-        <img src="app/images/photo.png" alt="">
-        <h2>Yoan Salangros</h2>
         <article class="main__section">
-            <h3 class="h3">Profil</h3>
+            <h3 id="profil" class="h3" >Profil</h3>
             <span class="underline"></span>
+            <img class="self__image" src="app/images/photo.png" alt="">
+            <h2 class="h2">Yoan Salangros</h2>
             <p>20 ans, un peu blagueur mais très motivé. Je recherche en permanence à être une meilleure version de moi-même. J'ai obtenu mon Baccalauréat général il y a 2 ans, enchaîné sur une année en tant qu'ouvrier du bâtiment. J'ai maintenant trouvé ma voie dans le développement web et je souhaite continuer sur ma lancée avec une formation « Concepteur développeur d'applications web » en alternance.</p>
             <a class="button__cv" target="_blank" href="app/files/CV_Yoan_Salangros.pdf">Curriculum vitæ <i class="fa-solid fa-download"></i></a>
+        </article>
+
+        <article class="main__section">
+            <h3 id="experiences" class="h3" >Expériences</h3>
+            <span class="underline"></span>
+            <section class="skills__section">
+                <div class="skills__div">
+                    <div class="left__skill skill">
+                        <strong>Développeur Web</strong> - O’clock
+                        <ul class="ul">Projet de fin d’études
+                            <li>→Développement Back-End application web </li>
+                            <li>→Équipe de 4 développeurs </li>
+                            <li>→4 semaines intensives </li>
+                        </ul>
+                        <em>Juin 2024</em>
+                    </div>
+                    <div class="left__skill skill">
+                        <strong>Ouvrier polyvalent du bâtiment</strong> - Association du Vimeu
+                        <ul class="ul">Rénovation de bâtiments
+                            <li>→Équipe d’une dizaine de membres</li>
+                            <li>→Capacité d’apprentissage rapide</li>
+                        </ul>
+                        <em>Octobre 2022 à Octobre 2023</em>
+                    </div>
+                </div>
+                <div class="skills__separator"></div>
+                <div class="skills__div">
+                    <div class="right__skill skill">
+                        <strong>Développeur Web</strong> - Fashion-BeautyOngles
+                        <ul class="ul">Stage création site vitrine
+                            <li>→Développement static application web</li>
+                            <li>→Autonomie</li>
+                            <li>→1 mois</li>
+                        </ul>
+                        <em>Novembre 2023</em>
+                    </div>
+                </div>
+            </section>
+
         </article>
 
         <article class="main__section">

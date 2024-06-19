@@ -10,6 +10,7 @@
 :root{
     --first-color: #47778B;
     --second-color: #eeeeee;
+    --white: white;
     --gradient :linear-gradient(0.25turn,#47778B, #eeeeee, #47778B);
 }
 
@@ -27,44 +28,137 @@
     justify-content: center;
 }
 
+.nav{
+    background-color: white;
+    padding: 2rem;
+}
+
+.nav__ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.ul{
+    list-style: none;
+}
+
+.ul__item__link{
+    text-decoration: none;
+    color: #551A8B;
+}
+
+.ul__item__link:hover{
+    color: red;
+}
+
+.self__image{
+    margin:2rem 0;
+}
+
 .header__h1{
     color: var(--first-color);
 }
 
 .main{
     background-color: var(--first-color);
-    margin: 0 2rem;
+    margin: 0 1rem;
     text-align: center;
     color: var(--second-color);
     padding: 1rem;
 }
 
 .h3{
+    font-size: 1.5rem;
     display: inline-block;
-    padding:  0 3rem;
+}
+
+.h2{
+    margin-bottom: 4rem;
 }
 
 .underline{
     background-image: linear-gradient(90deg, #47778B 0%, #47778B 5%, #eeeeee 45%, #eeeeee 55%, #47778B 95%, #47778B 100%);
     width: 200px;
     height: 3px;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .main__section{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 8rem;
+    border-radius: 25px;
+    padding: 2rem;
 }
 
 .button__cv{
     border: var(--second-color) solid 1px;
     border-radius: 20px;
     padding:  0.5rem 1rem;
-    margin-top: 1rem;
+    margin-top: 4rem;
     color: #eeeeee;
     text-decoration: none;
+}
+
+.return__btn{
+    position: fixed;
+    right: 1vw;
+    bottom: 5vh;
+}
+
+.fa-arrow-turn-up{
+    font-size: 2rem;
+    background: var(--second-color);
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+@media screen and (max-width:700px){
+    .nav__ul{
+        flex-direction: column;
+    }
+
+}
+
+/*     SECTION EXPERIENCE    */
+
+.skills__section{
+    display: flex;
+    margin-top: 4rem;
+}
+
+.skills__div{
+    width: auto;
+}
+
+.skills__separator{
+    width: 2px;
+    height: auto;
+    background-color: var(--second-color);
+    margin: 0 1rem;
+}
+
+.skill{
+    background-color: var(--second-color);
+    color: var(--first-color);
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: left;
+    font-size: calc(0.6rem + 0.5vw);
+}
+
+.left__skill{
+    margin-bottom: 10rem;
+}
+
+.right__skill{
+    margin-top: 10rem;
+}
+
+@media screen and (max-width:700px){
+    
 }
 
 /*     SECTION PROJETS     */
@@ -82,9 +176,9 @@
 }
 
 .project{
-    width: 27vw;
+    width: 40vw;
     position: relative;
-    height: 25vh;
+    height: 37vh;
     list-style: none;
     transition: 0.6;
     display: none;
