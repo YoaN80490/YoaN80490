@@ -34,7 +34,15 @@
             <span class="underline"></span>
             <img class="self__image" src="app/images/photo.png" alt="">
             <h2 class="h2">Yoan Salangros</h2>
-            <p>20 ans, un peu blagueur mais très motivé. Je recherche en permanence à être une meilleure version de moi-même. J'ai obtenu mon Baccalauréat général il y a 2 ans, enchaîné sur une année en tant qu'ouvrier du bâtiment. J'ai maintenant trouvé ma voie dans le développement web et je souhaite continuer sur ma lancée avec une formation « Concepteur développeur d'applications web » en alternance.</p>
+            <p class="card">J'ai 20 ans, et je suis un jeune développeur web passionné, motivé et toujours prêt à faire des blagues pour égayer l'ambiance. Après avoir obtenu mon Baccalauréat général il y a deux ans, j'ai travaillé pendant une année en tant qu'ouvrier du bâtiment, ce qui m'a permis d'acquérir de la rigueur et un solide sens du travail en équipe.
+
+                Depuis, j'ai trouvé ma véritable vocation dans le développement web. Actuellement, je suis en train de terminer une formation intensive en développement web et web mobile avec l'école à distance O'clock. En septembre, je passerai mon titre professionnel de développeur web et web mobile, équivalent à un bac+2.
+                
+                Au cours de cette formation, je me suis spécialisé dans le développement back-end avec Symfony, tout en conservant des compétences solides en développement fullstack, notamment avec JavaScript vanilla.
+                
+                Je souhaite maintenant continuer sur cette lancée avec une formation « Concepteur développeur d'applications web » en alternance. Je suis activement à la recherche d'une entreprise pour m'accueillir en alternance à partir de septembre.
+                
+                Je suis déterminé à constamment m'améliorer et à apporter mon énergie et ma passion pour le développement à une équipe dynamique.</p>
             <a class="button__cv" target="_blank" href="app/files/CV_Yoan_Salangros.pdf"><i class="fa-solid fa-download"></i> Télécharger curriculum vitæ</a>
         </article>
 
@@ -81,7 +89,7 @@
             <h3 id="competence" class="h3" >Compétences</h3>
             <span class="underline"></span>
 
-            <section class="skills__card">
+            <section class="card">
                 <div class="skills__part">
                     <h4 class="h4">Compétences</h4>
                     <ul class="skills">
@@ -119,11 +127,12 @@
             <ul class="projects">
                 <i class="fa-solid fa-arrow-left" id="left-btn"></i>
                 <li class="project current">
-                    <img src="app/images/site1.png" alt="portefolio" class="project__img">
-                    <p class="project__p">Site sur lequel vous vous trouvez, HTML/CSS/JavaScript uniquement.</p>
-                    <a class="project__link" href="/" target="_blank">
-                        <i class="fa-solid fa-link"></i>Portfolio
-                    </a>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7221451142365401088?compact=1" height="399" width="710" frameborder="0" allowfullscreen="" title="Post intégré" class="project__img"></iframe>
+                    <p class="project__p">L'Apothéose est un projet d'un mois en conditions professionnelles en équipe de 4 développeurs. De notre côté, nous étions 2 développeurs back avec Symfony et 2 développeurs front avec React. Au sein de l'équipe, j'étais Scrum Master et Lead dev back. 
+                        <br>Le projet s’appelle AmiDon, c'est une plateforme de dons d'objets entre amis, simple et pratique.</p>
+                        <a class="project__link" href="https://amidonapp.dev-me.fr" target="_blank">
+                            <i class="fa-solid fa-link"></i>AmiDon
+                        </a>
                 </li>
                 <li class="project current">
                     <img src="app/images/siteHSR.png" alt="portefolio" class="project__img">
@@ -137,6 +146,13 @@
                     <p class="project__p">Dans le cadre de ma formation chez O'clock, j'ai réalisé un site de vente de chaussures avec le framework Symfony.</p>
                     <a class="project__link" href="https://yoan-salangros.ovh/" target="_blank">
                         <i class="fa-solid fa-link"></i>Oshop
+                    </a>
+                </li>
+                <li class="project">
+                    <img src="app/images/site1.png" alt="portefolio" class="project__img">
+                    <p class="project__p">Site sur lequel vous vous trouvez, HTML/CSS/JavaScript uniquement.</p>
+                    <a class="project__link" href="/" target="_blank">
+                        <i class="fa-solid fa-link"></i>Portfolio
                     </a>
                 </li>
                 <li class="project">
@@ -180,7 +196,21 @@
         <p>Yoan Salangros 2024</p>
         <hr class="hr">
     </footer>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const links = document.querySelectorAll('.project__link');
+    
+            links.forEach(link => {
+                link.addEventListener('mouseover', function() {
+                    this.closest('.project').classList.add('hovering');
+                });
+    
+                link.addEventListener('mouseout', function() {
+                    this.closest('.project').classList.remove('hovering');
+                });
+            });
+        });
+    </script>
 <script type="module" src="app/js/app.js"></script>
 </body>
 </html>
